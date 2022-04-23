@@ -1,0 +1,106 @@
+body{
+	background-image: url(../images/background.jpg);
+	height: 100%;	
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	margin: 0;
+	color: #803b16;
+}
+
+@font-face {  
+	font-family: BubbleFont;
+    src: url(../fonts/Candycolouredclown-x2vq.otf) format("truetype");
+}
+
+#canvas1, #canvas3, #canvas2{
+	position: absolute;
+	top:0;
+	left:0;
+	
+}
+#canvas1{
+	z-index: 1;
+}
+
+#canvas2{
+	background-color: #cc850e;
+	z-index: 0;
+	
+}
+
+#canvas3{
+	z-index: 2;
+}
+
+#canvaswrap{
+	margin: 0;
+	position: absolute;
+	top: 11%;
+	left: 23%;
+	-ms- transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0.90;
+}
+
+#flower{
+	position: absolute;
+	left:48.5%;
+	top: 88.5%;
+	
+}
+
+#bee{	
+	position: absolute;
+	left: 51%;
+	top: 87%;
+	opacity: 0;
+}
+
+#title{
+	position: absolute;
+	font-family: BubbleFont;
+	font-size: 100px;
+	color: #803b16;
+	left: 35%;
+	top: 0;
+}
+
+#uiwrap{
+	width: 50px;
+	font-size: 45px;
+	position: absolute;
+	left: 18%;
+	top: 12%;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* track */
+::-webkit-scrollbar-track {
+	background: #ead8ba; 
+}
+ 
+/* handle */
+::-webkit-scrollbar-thumb {
+	background: #9e5127; 
+}
+
+/* handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #803b16; 
+}
+
+#replay:hover{
+	transition: 0.2s;
+	color: #Eee3cd;
+}
+
+@media (max-width: 1280px) and (max-height: 1024px) {
+	
+}
+
